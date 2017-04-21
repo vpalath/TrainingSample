@@ -8,7 +8,7 @@ public class CallableStockData implements Callable<Integer> {
 	public Integer call() throws Exception {
 		for(int i =0;i<5;i++){
 			Thread.sleep(500);
-			System.out.println("You have " +(500+1*10) + " shares of Apple");
+			System.out.println("You have " +(500+i*10) + " shares of Apple");
 		}
 		
 		return 200;
